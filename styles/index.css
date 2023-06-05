@@ -1,0 +1,7 @@
+@import url("variables.css"); 
+
+body {
+    background-color: var(--background);
+    font-size: var(--md1-font);
+    color: var(--text-color);
+}

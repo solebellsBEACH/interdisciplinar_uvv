@@ -16,6 +16,12 @@ const Drawer = () => {
     <h5>${user.role}</h5>
     </div>
     </div>
+    <div class='links-content'>
+    <a><li>Link Pagina</li></a>
+    <a><li>Link Pagina</li></a>
+    <a><li>Link Pagina</li></a>
+    <a><li>Link Pagina</li></a>
+    </div>
     </div>`
 }
 

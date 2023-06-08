@@ -47,7 +47,7 @@ function appendHtmlString(parentElement, htmlString) {
     while (tempElement.firstChild) {
       parentElement.appendChild(tempElement.firstChild);
     }
-  }
+};
 
 const topContainer = document.getElementById('top-container');
 appendHtmlString(topContainer, Drawer())
@@ -58,7 +58,7 @@ const interestsMap = interestsList.map(e=>Checkbox(e));
 appendHtmlString(checkboxContent, interestsMap.join(''))
 
 const postsContent =  document.getElementById('posts-content');
-const postsMap = postsList.map(e=>Post(e));
+const postsMap = postsList.map((e, i)=>Post(e, i));
 appendHtmlString(postsContent, postsMap.join(''))
 
 

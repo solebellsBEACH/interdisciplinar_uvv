@@ -36,8 +36,9 @@ const Checkbox = (label) => {
     </label>`
 }
 
-const Post = ({image, username, description, date}) =>{
-    return `<li class="post-content">
+const Post = (user, index) =>{
+    const {image, username, description, date} = user;
+    return `<li class="post-content" key="${'post-item'+index}" id="${index}">
     <img src="${image}"
         class="post-image" />
     <div class="instagram-bar">

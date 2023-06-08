@@ -1,13 +1,13 @@
 header{
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     background: var(--gray);
     padding-left: 15rem;
 }
 
 #drawer{
-    width: 15rem;
-    height: 4rem;
+    min-width: 15rem;
+    height: 5rem;
     background-color: var(--secondary);
     transition: height 0.3s ease;
     position: fixed;
@@ -16,6 +16,7 @@ header{
 .user-image{
     height: 3rem;
     border-radius: 1rem;
+    margin-right: 1rem;
 }
 .user-content{
     align-items: center;
@@ -23,6 +24,7 @@ header{
     padding: 0.2rem;
     margin: 0.2rem;
     color:var(--white);
+    margin: 1rem;
 }
 
 #drawer:hover{

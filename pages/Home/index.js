@@ -1,5 +1,14 @@
-import { Header } from "../../components/component.js";
+import { Drawer, Header } from "../../components/component.js";
 
-const header = document.getElementById('header')
-console.log(Header());
-header.innerHTML = Header();
+function appendHtmlString(parentElement, htmlString) {
+    const tempElement = document.createElement('div');
+    tempElement.innerHTML = htmlString;
+  
+    while (tempElement.firstChild) {
+      parentElement.appendChild(tempElement.firstChild);
+    }
+  }
+
+const container = document.getElementById('container');
+appendHtmlString(container, Drawer())
+appendHtmlString(container, Header())

@@ -36,4 +36,29 @@ const Checkbox = (label) => {
     </label>`
 }
 
-export { Header, Drawer, Checkbox}
+const Post = ({image, username, description, date}) =>{
+    return `<li class="post-content">
+    <img src="${image}"
+        class="post-image" />
+    <div class="instagram-bar">
+        <span id="instagram-bar-left-content">
+            <button class="icon-button">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="icon-button">
+                <i class="far fa-comment"></i>
+            </button>
+        </span>
+        <button class="icon-button">
+            <i class="far fa-bookmark"></i>
+        </button>
+    </div>
+    <div class="post-data-container">
+        <h4 class="post-username">${username}</h4>
+        <h5 class="post-description">${description}</h5>
+        <h6 class="post-date">${date}m ago</h6>
+    </div>
+</li>`
+}
+
+export { Header, Drawer, Checkbox, Post}

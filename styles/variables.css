@@ -10,10 +10,10 @@
     --red: #FE0135;
 
     /* Tamanho das Fontes */
-    --sm1-font: 0.833em;
-    --sm2-font: 1em;
-    --md1-font: 1.2em;
-    --md2-font: 1.44em;
-    --lg3-font: 1.728em;
-    --lg3-font: 2.072em;
+    --sm1-font: 0.833rem;
+    --sm2-font: 1rem;
+    --md1-font: 1.2rem;
+    --md2-font: 1.44rem;
+    --lg3-font: 1.728rem;
+    --lg3-font: 2.072rem;
 }

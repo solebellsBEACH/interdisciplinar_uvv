@@ -14,8 +14,22 @@
     width: 100%;
     height: auto;
     min-height: 10rem;
-}
 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 456px;
+    overflow-y: auto;
+}
+@media (max-width:1300px) {
+    #posts-content {
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width:950px) {
+    #posts-content {
+        grid-template-columns: auto;
+    }
+}
 @media (max-width:770px) {
     #checkboxs-content {
         grid-template-columns: auto auto auto;

@@ -1,2 +1,39 @@
 @import url("../components/drawer.css");
 @import url("../components/header.css");
+
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#left-content {
+    width: 330px;
+}
+
+#rigth-content {
+    width: 100%;
+    padding: 1rem;
+}
+
+input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    margin-right: 0.5rem;
+}
+
+.checkbox-content {
+    display: flex;
+    width: fit-content;
+    align-items: center;   
+}
+
+@media (max-width:425px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #left-content {
+        width: auto;
+    }
+}

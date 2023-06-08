@@ -1,12 +1,16 @@
-const Header = () => {
-    return `<header>
-    </header>`
-}
+// Constants
 const user = {
     name:'Gabriel Medina',
     image:'https://pbs.twimg.com/profile_images/750391781901164545/xA8M-3pB_400x400.jpg',
     role:"Funcionário"
 }
+
+// Components
+const Header = () => {
+    return `<header>
+    </header>`
+}
+
 const Drawer = () => {
     return `<div id='drawer'>
     <div class='user-content'>

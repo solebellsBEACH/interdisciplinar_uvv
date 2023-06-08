@@ -1,5 +1,5 @@
 #drawer{
-    min-width: 17rem;
+    width: 17rem;
     height: 5rem;
     background-color: var(--secondary);
     transition: height 0.3s ease;

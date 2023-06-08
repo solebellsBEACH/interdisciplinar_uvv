@@ -2,10 +2,28 @@
 
 #checkboxs-content {
     margin: 2rem 1rem;
-    max-width: 30rem;
+    max-width: 35rem;
     display: grid;
     grid-template-columns: auto auto auto auto;
 }
 .checkbox-content{
     margin-top: 1rem;
+}
+
+#posts-content{
+    width: 100%;
+    height: auto;
+    min-height: 10rem;
+}
+
+@media (max-width:770px) {
+    #checkboxs-content {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width:670px) {
+    #checkboxs-content {
+        grid-template-columns: auto auto;
+    }
 }

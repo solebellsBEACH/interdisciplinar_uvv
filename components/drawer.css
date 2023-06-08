@@ -3,7 +3,7 @@
     height: 5rem;
     background-color: var(--secondary);
     transition: height 0.3s ease;
-    position: fixed;
+    position: absolute;
 }
 
 .user-image{
@@ -38,7 +38,7 @@ li{
     }
 }
 
-@media(max-width:425px) {
+@media(max-width:768px) {
     #drawer{
         width: 100%;
         height: 5rem;

@@ -1,5 +1,6 @@
 @import url("../components/drawer.css");
 @import url("../components/header.css");
+@import url("variables.css");
 
 #container {
     display: flex;
@@ -28,7 +29,63 @@ input[type="checkbox"] {
     align-items: center;   
 }
 
-@media (max-width:425px) {
+.post-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 310px;
+    color:var(--black);
+}
+
+.post-image{
+    width: 310px;
+    height: 340px;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    object-fit: cover;
+}
+.post-data-container{
+    width: 100%;
+}
+.post-username{
+    font-size: var(--lg1-font);
+    font-weight: 500;
+}
+.post-date{
+    font-weight: 300;
+}
+
+.instagram-bar {
+    width:310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .icon-button i {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .icon-button span {
+    font-size: 3rem;
+    color: #333;
+  }
+
+  #instagram-bar-left-content{
+    display: flex;
+  }
+
+@media (max-width:768px) {
     #container {
         flex-direction: column;
     }

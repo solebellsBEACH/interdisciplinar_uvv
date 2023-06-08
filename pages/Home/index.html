@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;0,700;1,100&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Feed</title>
 </head>
 
@@ -23,10 +24,34 @@
             <h2>Feed de Publicações</h2>
             <div id="checkboxs-content">
             </div>
-            <div id="posts-content"></div>
+            <div id="posts-content">
+                <li class="post-content">
+                    <img src="https://pbs.twimg.com/profile_images/750391781901164545/xA8M-3pB_400x400.jpg"
+                        class="post-image" />
+                    <div class="instagram-bar">
+                        <span id="instagram-bar-left-content">
+                            <button class="icon-button">
+                                <i class="far fa-heart"></i>
+                            </button>
+                            <button class="icon-button">
+                                <i class="far fa-comment"></i>
+                            </button>
+                        </span>
+                        <button class="icon-button">
+                            <i class="far fa-bookmark"></i>
+                        </button>
+                    </div>
+                    <div class="post-data-container">
+                        <h4 class="post-username">Gabriel Medina</h4>
+                        <h5 class="post-description">Gabriel Medina</h5>
+                        <h6 class="post-date">8m ago</h6>
+                    </div>
+                </li>
+            </div>
         </div>
     </div>
     <script src="../../components/component.js" type="module"></script>
     <script src="./index.js" type="module"></script>
 </body>
+
 </html>

@@ -9,6 +9,6 @@ function appendHtmlString(parentElement, htmlString) {
     }
   }
 
-const container = document.getElementById('container');
-appendHtmlString(container, Drawer())
-appendHtmlString(container, Header())
+const topContainer = document.getElementById('top-container');
+appendHtmlString(topContainer, Drawer())
+appendHtmlString(topContainer, Header())

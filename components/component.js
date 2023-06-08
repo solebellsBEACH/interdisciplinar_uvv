@@ -29,4 +29,11 @@ const Drawer = () => {
     </div>`
 }
 
-export { Header, Drawer }
+const Checkbox = (label) => {
+    return `<label class="checkbox-content">
+    <input type="checkbox" />
+    ${label ||'Label'}
+    </label>`
+}
+
+export { Header, Drawer, Checkbox}

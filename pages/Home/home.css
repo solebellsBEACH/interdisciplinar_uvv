@@ -1,9 +1,8 @@
 @import url("../../styles/variables.css"); 
 
 #checkboxs-content {
-    margin: 2.5rem 1rem;
+    margin: 2rem 1rem;
     max-width: 30rem;
-
     display: grid;
     grid-template-columns: auto auto auto auto;
 }

@@ -13,7 +13,7 @@ const topContainer = document.getElementById('top-container');
 appendHtmlString(topContainer, Drawer())
 appendHtmlString(topContainer, Header())
 const postId = parseInt(window.localStorage.getItem('post_id'))
-const postContent =  document.getElementById('post-content');
-// appendHtmlString(postContent, PostContent(postsList[postId], postId))
+const postContainer =  document.getElementById('post-container');
+appendHtmlString(postContainer, PostContent(postsList[postId], postId))
 
 

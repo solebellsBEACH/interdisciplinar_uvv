@@ -104,6 +104,32 @@ const Post = (user, index) =>{
 
 const PostContent = (user, index) =>{
     const {image, username, description, date} = user;
+
+    return `
+    <div id="post-content">
+    <img class="post-content-image" src="${image}" alt="Post Image">
+    <div class="instagram-bar">
+        <span id="instagram-bar-left-content">
+            <button class="icon-button">
+                <i class="far fa-heart"></i>
+            </button>
+            <button class="icon-button">
+                <i class="far fa-comment"></i>
+            </button>
+        </span>
+        <button class="icon-button">
+            <i class="far fa-bookmark"></i>
+        </button>
+    </div>
+    </div>
+    <div class="post-data-content">
+    <div class="post-user-content">
+        <i id="user-logo" class="fa-sharp fa-solid fa-circle-user"></i>
+        <h2>${username}</h2>
+    </div>
+    <h3 class='post-description'>${description}</h3>
+    </div>
+    `
 }
 
 export { Header, Drawer, Checkbox, Post, postsList, PostContent}

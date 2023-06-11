@@ -1,43 +1,60 @@
 @import url("../../styles/variables.css"); 
 
-#checkboxs-content {
+#post-container {
     margin: 2rem 1rem;
-    max-width: 35rem;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-}
-.checkbox-content{
-    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
 }
 
-#posts-content{
+.post-content-image{
+    width: 480px;
+    height: 480px;
+    object-fit: cover;
+}
+
+.instagram-bar {
+    width:100%;
+}
+
+.post-data-content{
     width: 100%;
-    height: auto;
-    min-height: 10rem;
+    margin-left: 3rem;
+    background: rgb(0, 255, 55);
 
-    display: grid;
-    grid-template-columns: auto auto auto;
-    height: 456px;
-    overflow-y: auto;
-}
-@media (max-width:1300px) {
-    #posts-content {
-        grid-template-columns: auto auto;
-    }
-}
-@media (max-width:950px) {
-    #posts-content {
-        grid-template-columns: auto;
-    }
-}
-@media (max-width:770px) {
-    #checkboxs-content {
-        grid-template-columns: auto auto auto;
-    }
 }
 
-@media (max-width:670px) {
-    #checkboxs-content {
-        grid-template-columns: auto auto;
+.post-user-content{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#user-logo{
+    font-size: 6vw;
+    color: var(--secondary);
+    margin-right: 1rem;
+}
+
+@media(max-width: 1150px){
+    #post-container {
+        flex-direction: column;
+    }
+    .post-data-content{
+        max-width: 480px;
+        margin-left: 0px;
+    }
+    #user-logo{
+        font-size: 3rem;
+    }
+    .instagram-bar {
+        max-width:480px;
+    }
+}
+
+@media(max-width: 560px){
+    .post-content-image{
+        width: 90vw;
+        height: 90vw;
     }
 }

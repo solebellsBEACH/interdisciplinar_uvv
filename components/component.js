@@ -102,4 +102,8 @@ const Post = (user, index) =>{
 </li>`
 }
 
-export { Header, Drawer, Checkbox, Post, postsList}
+const PostContent = (user, index) =>{
+    const {image, username, description, date} = user;
+}
+
+export { Header, Drawer, Checkbox, Post, postsList, PostContent}

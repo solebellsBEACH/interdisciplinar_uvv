@@ -1,4 +1,4 @@
-import { Drawer, Header, Checkbox, Post } from "../../components/component.js";
+import { Drawer, Header, PostContent, postsList } from "../../components/component.js";
 
 function appendHtmlString(parentElement, htmlString) {
     const tempElement = document.createElement('div');
@@ -12,7 +12,8 @@ function appendHtmlString(parentElement, htmlString) {
 const topContainer = document.getElementById('top-container');
 appendHtmlString(topContainer, Drawer())
 appendHtmlString(topContainer, Header())
-
-console.log(window.location.href)
+const postId = parseInt(window.localStorage.getItem('post_id'))
+const postContent =  document.getElementById('post-content');
+// appendHtmlString(postContent, PostContent(postsList[postId], postId))
 
 

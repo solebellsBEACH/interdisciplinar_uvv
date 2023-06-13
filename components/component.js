@@ -101,8 +101,8 @@ const Post = (user, index) =>{
 </li>`
 }
 
-const PostContent = (user, index) =>{
-    const {image, username, description, date} = user;
+const PostContent = (user) =>{
+    const {image, username} = user;
 
     return `
     <div id="post-content">
@@ -126,6 +126,21 @@ const PostContent = (user, index) =>{
         <i id="user-logo" class="fa-sharp fa-solid fa-circle-user"></i>
         <h2>${username}</h2>
     </div>
+    <div class="comment-list">
+                <div class="comment">
+                  <img class="user-avatar" src="https://conteudo.imguol.com.br/c/esporte/dd/2023/02/09/kelly-slater-surfista-americano-1675962742370_v2_1x1.jpg" alt="User Avatar">
+                  <div class="comment-content">
+                    <h4 class="username">Kelly Slater</h4>
+                    <p class="comment-text">Adorei essa foto! As cores estão incríveis. 😍</p>
+                  </div>
+                </div>
+                <div class="comment">
+                  <img class="user-avatar" src="https://i.discogs.com/sgSLhUkz57DDiBd1RC5Xjv_m0xTEEJvWWwT1E5XDcsk/rs:fit/g:sm/q:90/h:480/w:443/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTQwOTY3/MC0xNDUwMzkyNzQ0/LTEwMDcuanBlZw.jpeg" alt="User Avatar">
+                  <div class="comment-content">
+                    <h4 class="username">Rob Machado</h4>
+                    <p class="comment-text">Que vista maravilhosa! Dá vontade de estar lá. 🌅</p>
+                  </div>
+                </div>
     </div>
     `
 }

@@ -1,1 +1,63 @@
-@import url("../../styles/variables.css"); 
+@import url("../../styles/variables.css");
+
+
+#left-content {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+#profile-image {
+    width: 240px
+}
+#profile-name{
+    margin-top: 1rem;
+}
+
+.default-button{
+    margin-top: 1rem;
+}
+
+#profile-description{
+    width: 240px;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-size: 0.9rem;
+    text-align: inherit;
+    font-weight: 300;
+}
+
+#rigth-content{
+    display: flex;
+    justify-content: center;
+}
+
+#content-top{
+    display: flex;
+}
+
+.followers-content{
+    margin-left:0.5rem
+}
+
+.followers-value{
+    font-weight: 300;
+}
+
+@media(max-width:768px) {
+    #left-content {
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+    }
+
+    #profile-image {
+        width: 80vw;
+    }
+    #profile-description{
+        width: 80vw;
+        height: auto;
+    }
+}

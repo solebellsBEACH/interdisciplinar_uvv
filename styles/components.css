@@ -16,6 +16,25 @@
     padding: 1rem;
 }
 
+.default-button {
+    padding: 10px 16px;
+    background-color: var(--secondary);
+    color: var(--white);
+    border-radius: 5px;
+    width: max-content;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0, 0, 0.5, 1) 0s;
+}
+
+.default-button:hover{
+    font-size: 14.5px;
+}
+
 input[type="checkbox"] {
     width: 24px;
     height: 24px;

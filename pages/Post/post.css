@@ -9,7 +9,6 @@
 .post-content-image{
     width: 480px;
     height: 480px;
-    object-fit: cover;
 }
 
 .instagram-bar {
@@ -43,6 +42,7 @@
     color: var(--secondary);
     margin-right: 1rem;
 }
+
 
 @media(max-width: 1150px){
     #post-container {

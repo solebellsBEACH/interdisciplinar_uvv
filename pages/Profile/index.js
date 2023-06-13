@@ -1,6 +1,4 @@
-import { Drawer, Header, Checkbox, Post, postsList } from "../../components/component.js";
-
-const interestsList = ['Culinária', 'Esporte', 'Músicas', 'Festa', 'Viagens', 'Livros']
+import { Drawer, Header} from "../../components/component.js";
 
 function appendHtmlString(parentElement, htmlString) {
     const tempElement = document.createElement('div');

@@ -60,10 +60,9 @@ const Drawer = () => {
     </div>
     </div>
     <div class='links-content'>
-    <a><li>Link Pagina</li></a>
-    <a><li>Link Pagina</li></a>
-    <a><li>Link Pagina</li></a>
-    <a><li>Link Pagina</li></a>
+    <a href="http://127.0.0.1:5500/pages/Home/index.html"><li>Feed</li></a>
+    <a><li>Criar Publicação</li></a>
+    <a href="http://127.0.0.1:5500/pages/Profile/index.html"><li>Perfil</li></a>
     </div>
     </div>`
 }
@@ -127,7 +126,6 @@ const PostContent = (user, index) =>{
         <i id="user-logo" class="fa-sharp fa-solid fa-circle-user"></i>
         <h2>${username}</h2>
     </div>
-    <h3 class='post-description'>${description}</h3>
     </div>
     `
 }

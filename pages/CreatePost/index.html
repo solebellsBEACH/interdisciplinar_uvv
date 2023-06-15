@@ -15,6 +15,8 @@
     <title>Nova Publicação</title>
     <script src="../../components/component.js" type="module"></script>
     <script src="./index.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
     <script>
         function atribuirURL() {
             var url = document.getElementById('url').value;
@@ -23,6 +25,13 @@
             imagem.style.display = 'flex';
             var inputContent = document.getElementById('input-content')
             inputContent.style.display = 'none';
+        }
+        function exibirErro() {
+            var imagem = document.getElementById('image-element');
+            imagem.src = '';
+            imagem.style.display = 'none';
+            var inputContent = document.getElementById('input-content')
+            inputContent.style.display = 'flex';
         }
     </script>
 </head>
@@ -35,17 +44,23 @@
         </div>
         <div id="rigth-content">
             <h2>Criar Publicação</h2>
-            <form>
-                <div class='image-container'>
-                    <img id="image-element" />
-                    <section class="input-content" id="input-content">
-                        <label for="fname">Adicione a URL da imagem</label>
-                        <input class="default-input" type="url" id="url" name="url" placeholder="Url da Imagem">
-                        <button class="default-button" type="button" onclick="atribuirURL()">Confirmar</button>
-                    </section>
-                    
-                </div>
-            </form>
+            <div class="form-container">
+                <section>
+                    <div class='image-container'>
+                        <img id="image-element" onerror="exibirErro()" />
+                        <section class="input-content" id="input-content">
+                            <label for="fname">Adicione a URL da imagem</label>
+                            <input class="default-input" type="url" id="url" name="url" placeholder="Url da Imagem">
+                            <button class="default-button" type="button" onclick="atribuirURL()">Adicionar imagem</button>
+                        </section>
+                    </div>
+                </section>
+                <section class='input-container'>
+                    <label for="fname">Adicione uma descrição</label>
+                    <textarea type="text" class="default-input" id="description-input" placeholder="Insira uma descrição" rows="4" cols="50"></textarea>
+                    <button class="default-button" type="submit" onclick="submit()">Criar Publicação</button>
+                </section>
+            </div>
         </div>
     </div>
 </body>

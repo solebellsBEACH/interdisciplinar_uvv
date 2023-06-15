@@ -1,6 +1,6 @@
 @import url("../../styles/variables.css");
 
-form {
+.form-container {
     margin-top: 2rem;
     width: 100%;
     height: 10vh;
@@ -8,9 +8,13 @@ form {
     justify-content: center;
 }
 
-.image-container{
+.image-container {
     width: 30vw;
     height: 30vw;
+
+    min-width: 20rem;
+    min-height: 20rem;
+
     background: rgba(206, 206, 206, 0.21);
     border-radius: 0.5rem;
     border: 1px var(--text-color) solid;
@@ -21,28 +25,52 @@ form {
     flex-direction: column;
 }
 
-.input-content{
+.input-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-#image-element{
+.input-container {
+    margin-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+}
+
+#image-element {
     width: 100%;
     height: 100%;
     display: none;
 }
 
-@media(max-width:768px){
-    .image-container{
+#description-input {
+    width: 300px;
+    height: 130px;
+}
+
+@media(max-width:768px) {
+    .image-container {
         width: 80vw;
         height: 80vw;
     }
+
+    .form-container {
+        display: grid;
+    }
+    .input-container {
+        margin-top: 3rem;
+        margin-left: 0rem;
+    }
 }
-@media(max-width:425px){
-    .image-container{
+
+@media(max-width:425px) {
+    .image-container {
+        min-width: 19rem;
         width: 90vw;
         height: 90vw;
     }
+
 }

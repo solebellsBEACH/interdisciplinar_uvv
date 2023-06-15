@@ -1,7 +1,7 @@
-import { Drawer, Header, Checkbox, Post, postsList } from "../../components/component.js";
+import { Drawer, Header, Checkbox, Post, postsList, localStorageManager, getPosts } from "../../components/component.js";
 
 const interestsList = ['Culinária', 'Esporte', 'Músicas', 'Festa', 'Viagens', 'Livros']
-
+localStorageManager(window);
 function appendHtmlString(parentElement, htmlString) {
     const tempElement = document.createElement('div');
     tempElement.innerHTML = htmlString;
@@ -20,5 +20,5 @@ const interestsMap = interestsList.map(e=>Checkbox(e));
 appendHtmlString(checkboxContent, interestsMap.join(''))
 
 const postsContent =  document.getElementById('posts-content');
-const postsMap = postsList.map((e, i)=>Post(e, i));
+const postsMap = getPosts(window).map((e, i)=>Post(e, i));
 appendHtmlString(postsContent, postsMap.join(''));

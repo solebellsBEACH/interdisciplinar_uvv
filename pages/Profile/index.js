@@ -1,5 +1,6 @@
-import { Drawer, Header} from "../../components/component.js";
+import { Drawer, Header, localStorageManager} from "../../components/component.js";
 
+localStorageManager(window);
 function appendHtmlString(parentElement, htmlString) {
     const tempElement = document.createElement('div');
     tempElement.innerHTML = htmlString;

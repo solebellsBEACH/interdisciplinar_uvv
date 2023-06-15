@@ -145,4 +145,15 @@ const PostContent = (user) =>{
     `
 }
 
-export { Header, Drawer, Checkbox, Post, postsList, PostContent}
+const localStorageManager = (window) => {
+  if(!window.localStorage.getItem('posts')){
+    window.localStorage.setItem('posts', JSON.stringify(postsList))
+  }
+}
+
+const getPosts = (window)=>{
+  const posts = window.localStorage.getItem('posts')
+  return JSON.parse(posts)
+}
+
+export { Header, Drawer, Checkbox, Post, postsList, PostContent, localStorageManager, getPosts}

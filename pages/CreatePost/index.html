@@ -33,6 +33,26 @@
             var inputContent = document.getElementById('input-content')
             inputContent.style.display = 'flex';
         }
+        function addNewPost(post) {
+            let storageArray = JSON.parse(window.localStorage.getItem('posts'));
+            storageArray.push(post)
+            window.localStorage.setItem('posts', JSON.stringify(storageArray));
+            window.location.pathname = 'pages/Home/index.html'
+        }
+        function submitForm() {
+            var imagem = document.getElementById('image-element');
+            var description = document.getElementById('description-input');
+            if (!description.value) {
+                alert('Adicione uma descrição')
+                return;
+            }
+            if (!imagem.src) {
+                alert('Adicione uma URL válida')
+                return;
+            }
+            addNewPost({ image: imagem.src, description: description.value, date: 1, username: 'Gabriel Medina' })
+        }
+
     </script>
 </head>
 
@@ -51,14 +71,16 @@
                         <section class="input-content" id="input-content">
                             <label for="fname">Adicione a URL da imagem</label>
                             <input class="default-input" type="url" id="url" name="url" placeholder="Url da Imagem">
-                            <button class="default-button" type="button" onclick="atribuirURL()">Adicionar imagem</button>
+                            <button class="default-button" type="button" onclick="atribuirURL()">Adicionar
+                                imagem</button>
                         </section>
                     </div>
                 </section>
                 <section class='input-container'>
                     <label for="fname">Adicione uma descrição</label>
-                    <textarea type="text" class="default-input" id="description-input" placeholder="Insira uma descrição" rows="4" cols="50"></textarea>
-                    <button class="default-button" type="submit" onclick="submit()">Criar Publicação</button>
+                    <textarea type="text" class="default-input" id="description-input"
+                        placeholder="Insira uma descrição" rows="4" cols="50"></textarea>
+                    <button class="default-button" type="submit" onclick="submitForm()">Criar Publicação</button>
                 </section>
             </div>
         </div>

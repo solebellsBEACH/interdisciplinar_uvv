@@ -17,8 +17,6 @@
 
     display: grid;
     grid-template-columns: auto auto auto;
-    height: 456px;
-    overflow-y: auto;
 }
 @media (max-width:1300px) {
     #posts-content {

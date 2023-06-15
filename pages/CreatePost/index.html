@@ -15,6 +15,16 @@
     <title>Nova Publicação</title>
     <script src="../../components/component.js" type="module"></script>
     <script src="./index.js" type="module"></script>
+    <script>
+        function atribuirURL() {
+            var url = document.getElementById('url').value;
+            var imagem = document.getElementById('image-element');
+            imagem.src = url;
+            imagem.style.display = 'flex';
+            var inputContent = document.getElementById('input-content')
+            inputContent.style.display = 'none';
+        }
+    </script>
 </head>
 
 <body>
@@ -23,7 +33,20 @@
     <div id="container">
         <div id="left-content">
         </div>
-        <div id="rigth-content"></div>
+        <div id="rigth-content">
+            <h2>Criar Publicação</h2>
+            <form>
+                <div class='image-container'>
+                    <img id="image-element" />
+                    <section class="input-content" id="input-content">
+                        <label for="fname">Adicione a URL da imagem</label>
+                        <input class="default-input" type="url" id="url" name="url" placeholder="Url da Imagem">
+                        <button class="default-button" type="button" onclick="atribuirURL()">Confirmar</button>
+                    </section>
+                    
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 

@@ -60,9 +60,9 @@ const Drawer = () => {
     </div>
     </div>
     <div class='links-content'>
-    <a  class='link-text' href="http://127.0.0.1:5500/pages/Home.html"><li>Feed</li></a>
-    <a class='link-text' href="http://127.0.0.1:5500/pages/CreatePost.html"><li>Criar Publicação</li></a>
-    <a class='link-text'  href="http://127.0.0.1:5500/pages/Profile.html"><li>Perfil</li></a>
+    <a  class='link-text' href="Home.html"><li>Feed</li></a>
+    <a class='link-text' href="CreatePost.html"><li>Criar Publicação</li></a>
+    <a class='link-text'  href="Profile.html"><li>Perfil</li></a>
     </div>
     </div>`
 }

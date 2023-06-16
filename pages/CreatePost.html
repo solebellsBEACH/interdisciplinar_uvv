@@ -37,7 +37,7 @@
             let storageArray = JSON.parse(window.localStorage.getItem('posts'));
             storageArray.push(post)
             window.localStorage.setItem('posts', JSON.stringify(storageArray));
-            window.location.pathname = 'pages/Home/index.html'
+            window.location.href = 'Home.html'
         }
         function submitForm() {
             var imagem = document.getElementById('image-element');

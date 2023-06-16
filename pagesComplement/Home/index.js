@@ -1,4 +1,4 @@
-import { Drawer, Header, Checkbox, Post, postsList, localStorageManager, getPosts } from "../../components/component.js";
+import { Drawer, Header, Checkbox, Post, localStorageManager, getPosts, pagesEnum } from "../../components/component.js";
 
 const interestsList = ['Culinária', 'Esporte', 'Músicas', 'Festa', 'Viagens', 'Livros']
 localStorageManager(window);
@@ -12,7 +12,7 @@ function appendHtmlString(parentElement, htmlString) {
 };
 
 const topContainer = document.getElementById('top-container');
-appendHtmlString(topContainer, Drawer())
+appendHtmlString(topContainer, Drawer(pagesEnum[0]))
 appendHtmlString(topContainer, Header())
 
 const checkboxContent =  document.getElementById('checkboxs-content');

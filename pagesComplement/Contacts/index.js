@@ -11,6 +11,5 @@ function appendHtmlString(parentElement, htmlString) {
 };
 
 const topContainer = document.getElementById('top-container');
-appendHtmlString(topContainer, Drawer(pagesEnum[1]));
+appendHtmlString(topContainer, Drawer(pagesEnum[3]));
 appendHtmlString(topContainer, Header());
-

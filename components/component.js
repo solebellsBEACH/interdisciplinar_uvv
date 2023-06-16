@@ -44,13 +44,16 @@ const postsList = [
   },
   ]
 
+const pagesEnum = ["feed", "criar-publicacao", "perfil", "contatos"];
+
 // Components
 const Header = () => {
     return `<header>
     </header>`
 }
 
-const Drawer = () => {
+
+const Drawer = (pageName) => {
     return `<div id='drawer'>
     <div class='user-content'>
     <img class='user-image' src="${user.image}"/>
@@ -60,9 +63,10 @@ const Drawer = () => {
     </div>
     </div>
     <div class='links-content'>
-    <a  class='link-text' href="Home.html"><li>Feed</li></a>
-    <a class='link-text' href="CreatePost.html"><li>Criar Publicação</li></a>
-    <a class='link-text'  href="Profile.html"><li>Perfil</li></a>
+    ${pageName!== pagesEnum[0] ? `<a class='link-text' href="Home.html"><li>Feed</li></a>` : ""}
+    ${pageName!== pagesEnum[1] ? `<a class='link-text' href="CreatePost.html"><li>Criar Publicação</li></a>` : ""}
+    ${pageName!== pagesEnum[2] ? `<a class='link-text'  href="Profile.html"><li>Perfil</li></a>` : ""}
+    ${pageName!== pagesEnum[3] ? `<a class='link-text'  href="Contacts.html"><li>Contatos</li></a>` : ""}
     </div>
     </div>`
 }
@@ -156,4 +160,4 @@ const getPosts = (window)=>{
   return JSON.parse(posts)
 }
 
-export { Header, Drawer, Checkbox, Post, postsList, PostContent, localStorageManager, getPosts}
+export { Header, Drawer, Checkbox, Post, postsList, PostContent, localStorageManager, getPosts, pagesEnum}

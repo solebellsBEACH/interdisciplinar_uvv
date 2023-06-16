@@ -1,4 +1,4 @@
-import { Drawer, Header, localStorageManager} from "../../components/component.js";
+import { Drawer, Header, localStorageManager, pagesEnum} from "../../components/component.js";
 
 localStorageManager(window);
 function appendHtmlString(parentElement, htmlString) {
@@ -11,7 +11,7 @@ function appendHtmlString(parentElement, htmlString) {
 };
 
 const topContainer = document.getElementById('top-container');
-appendHtmlString(topContainer, Drawer());
+appendHtmlString(topContainer, Drawer(pagesEnum[2]));
 appendHtmlString(topContainer, Header());
 
 const tabButtons = document.querySelectorAll('.tab-button');

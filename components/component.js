@@ -36,12 +36,6 @@ const postsList = [
     description:'Curtindo um frio',
     date:2
   },
-  {
-    image:'https://img.olympicchannel.com/images/image/private/t_social_share_thumb/f_auto/primary/vqys54onceefbza1qu9p',
-    username:'Neymar JR',
-    description:'Curtindo um frio',
-    date:2
-  },
   ]
 
 const pagesEnum = ["feed", "criar-publicacao", "perfil", "contatos"];

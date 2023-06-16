@@ -11,7 +11,7 @@ function appendHtmlString(parentElement, htmlString) {
 };
 
 const topContainer = document.getElementById('top-container');
-appendHtmlString(topContainer, Drawer())
+appendHtmlString(topContainer, Drawer(''))
 appendHtmlString(topContainer, Header())
 const postId = parseInt(window.localStorage.getItem('post_id'))
 const postContainer =  document.getElementById('post-container');
